@@ -25,7 +25,7 @@ spec:
         app.kubernetes.io/instance: test-component-arle
     spec:
       containers:
-      - image: quay.io/redhat-appstudio-qe/test-images:964277bc1ea4429f8ee9e328d04bd3a2
+      - image: quay.io/redhat-appstudio-qe/test-images@sha256:e2e8ee4c446781fbe5991f2495b77f64a48f18a0b7f80cd055d0618af50cf4d5
         name: my-python
         ports:
         - containerPort: 8081
