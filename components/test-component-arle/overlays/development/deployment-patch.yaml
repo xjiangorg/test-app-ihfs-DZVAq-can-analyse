@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: test-component-arle
+  namespace: build-e2e-uvvm-tenant
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-appstudio-qe/test-images@sha256:e2e8ee4c446781fbe5991f2495b77f64a48f18a0b7f80cd055d0618af50cf4d5
+        name: my-python
+        resources: {}
+status: {}
